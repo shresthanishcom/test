@@ -30,13 +30,17 @@
         let sentence = document.getElementById("sentence").value;
         let sliceFrom = document.getElementById("sliceFrom").value;
         let sliceTo = document.getElementById("sliceTo").value;
-        console.log(sentence.indexOf(sliceFrom));
-        console.log(sliceTo.length);
 
-        document.getElementById("slicedItem").innerHTML = sentence.slice(
-          sentence.indexOf(sliceFrom),
-          sentence.indexOf(+sentence.indexOf(sliceTo) + sliceTo.length + 1)
-        );
+        console.log(sentence.search(/[^abc$]/));
+
+        // (sentence.indexOf(sliceFrom) !== -1) &
+        // (sentence.indexOf(sliceTo) !== -1)
+        //   ? (document.getElementById("slicedItem").innerHTML = sentence.slice(
+        //       sentence.indexOf(sliceFrom),
+        //       sentence.indexOf(sliceTo) + sliceTo.length + 1
+        //     ))
+        //   : (document.getElementById("slicedItem").innerHTML =
+        //       "Some words not found");
       }
     </script>
     <!-- <select>

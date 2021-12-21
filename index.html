@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Enter some words:</h1>
+
+    <input
+      id="sentence"
+      type="text
+      "
+    />
+    <br />
+    <h2>Slicing word</h2>
+
+    From: <input id="sliceFrom" type="text" /> To:
+    <input id="sliceTo" type="text" />
+
+    <button onclick="{sliceIt()}">Slice it</button>
+
+    <div id="slicedItem">Sliced word will appear here!!</div>
+    <script>
+      // for slicing
+      function sliceIt() {
+        let sentence = document.getElementById("sentence").value;
+        let sliceFrom = document.getElementById("sliceFrom").value;
+        let sliceTo = document.getElementById("sliceTo").value;
+        console.log(sentence.indexOf(sliceFrom));
+        console.log(sliceTo.length);
+
+        document.getElementById("slicedItem").innerHTML = sentence.slice(
+          sentence.indexOf(sliceFrom),
+          sentence.indexOf(+sentence.indexOf(sliceTo) + sliceTo.length + 1)
+        );
+      }
+    </script>
+    <!-- <select>
+      <script>
+        let i = 1998;
+        while(i<2021){
+          document.write(`<option>${i}</option>`)
+          i++;
+
+
+          }
+        </script>
+      </select>
+
+  </select> -->
+    <!-- 
+    <script>
+      for (var i = 1; i < 5; i++) {
+        for (var j = 1; j <= i; j++) {
+          document.write(i);
+        }
+        document.write("<br/>");
+      }
+    </script> -->
+    <!-- 
+    <table border="1">
+      <script>
+        for (var i = 1; i <= 4; i++) {
+          document.write(`<tr>`);
+          for (var j = 1; j <= 4; j++) {
+            document.write(`<td>${j}</td>`);
+          }
+        }
+      </script>
+    </table> -->
+
+    <!-- <script>
+      let value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      document.write("Before: " + value);
+      let toRemove = prompt("WHich number u want to remove");
+
+      let removedItems = value.filter((element) => {
+        return element != toRemove;
+      });
+
+      document.write("after: " + removedItems);
+    </script> -->
+  </body>
+</html>

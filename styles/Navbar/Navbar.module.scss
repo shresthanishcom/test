@@ -1,0 +1,33 @@
+.showMenu{
+        animation-name:slide ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        top:84px;
+        right:0px;
+}
+.hideMenu{
+        animation-name: slideback;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        top:84px;
+}
+@keyframes slideback {
+        0%{
+                right:0px;
+        
+        }
+        100%{
+                right: 700px;
+                display: none;
+        }
+        
+}
+@keyframes slide {
+        0%{
+                right:500px;
+
+        }
+        100%{
+                right:0px;
+        }
+}

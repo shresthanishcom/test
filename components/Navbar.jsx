@@ -25,7 +25,7 @@ export default function Navbar() {
           id="nav-lists"
           className={`${
             sideMenu ? Style.showMenu : Style.hideMenu
-          } nav-lists  grid absolute w-3/4 h-full gap-2 sm:static sm:flex sm:w-4/5 items-center justify-around sm:rounded-full bg-gradient-to-r from-red-400 to-green-300 cursor-pointer`}
+          } nav-lists  grid absolute w-3/4 h-full gap-2 sm:static sm:flex sm:w-4/5 items-center justify-around sm:rounded-full bg-gradient-to-r from-red-400 to-green-300 cursor-pointer z-10`}
         >
           <li className="hover:text-yellow-200 hover:animate-bounce active">
             Home

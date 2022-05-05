@@ -1,13 +1,16 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/globals.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <ParallaxProvider>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </ParallaxProvider>
     </>
   );
 }

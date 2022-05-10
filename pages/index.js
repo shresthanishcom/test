@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Anish Shrestha</title>
+        <title>Anish Shrestha / Home</title>
         <meta name="description" content="Anish Shrestha web app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

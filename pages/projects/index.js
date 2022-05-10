@@ -12,7 +12,7 @@ export default function projects() {
             target="_blank"
             href="https://anish-ecommerce.netlify.app"
           >
-            <Image src="/anishPotrait.jpg" height="500px" width="600px" />
+            {/* <Image src="/anishPotrait.jpg" height="500px" width="600px" /> */}
             Ecommerce
           </a>
           <a
